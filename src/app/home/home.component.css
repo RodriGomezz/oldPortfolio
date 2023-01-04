@@ -1,0 +1,48 @@
+.home {
+    width: 100vw;
+    height: 93.7vh;
+    background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+    color: white;
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3 {
+    font-size: 3rem;
+    position: relative;
+    animation: movement 2s;
+}
+
+/* movment slide of the text */
+@keyframes movement {
+
+    0% {
+        opacity: 0;
+        left: -1000px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.name {
+    color: rgb(11, 185, 185);
+}
+
+.imgprofile {
+    width: 500px;
+    height: 470px;
+}
+
+@media (max-width: 1060px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        background: black;
+        width: 100vw;
+        height: 93.7vh;
+    }
+}

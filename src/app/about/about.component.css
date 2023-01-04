@@ -1,0 +1,39 @@
+::ng-deep html,
+body,
+.about {
+    background: url(/assets/img/layered-waves-haikei-red.svg);
+    background-size: cover;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    padding-top: 70px;
+    color: rgb(36, 102, 243);
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    color: white;
+    font-size: 21px;
+    padding-top: 30px;
+    text-align: center;
+    margin: 20px 50px;
+    animation: opacity 5s;
+}
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

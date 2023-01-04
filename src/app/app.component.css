@@ -1,0 +1,77 @@
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 23px;
+}
+
+.login {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background-color: #001220;
+    animation: typewriter 3s steps(24) forwards;
+}
+
+/* animation style typewriter in principal text */
+
+h1::after {
+    width: 1px;
+    background: white;
+    animation: typewriter 3s steps(24) forwards, blink 0.8s steps(24) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.btn {
+    background: rgb(11, 185, 185);
+    border: 1px solid rgb(7, 134, 134);
+    color: white;
+    margin-top: 25px;
+}
+
+
+.navbar-nav .active {
+    color: rgb(11, 185, 185);
+}
+
+.nav-item a:hover {
+    color: rgb(11, 185, 185);
+}
